@@ -1,0 +1,333 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+      height: 83vh;
+      margin-bottom: 6rem;
+    }
+    .section__text{
+      padding-top: 10px;
+      align-items: center;
+    }
+    .about-containers {
+      
+      flex-wrap: wrap;
+    }
+    .details-container{
+      padding-top: 30px;
+    }
+    #about, #experience{
+      padding-top: 80px;
+    }
+    #contact,
+    #projects {
+      /* padding-top: 200px; */
+      height: fit-content;
+      
+    }
+    /* #profile{
+      padding-top: 10px;
+    } */
+    #profile{
+      padding-top: 100px;
+    }
+    #contact{
+      background-color: lightskyblue;
+      padding-left: 0px;
+      padding-bottom: 0px;
+      padding-right: 0px;
+      margin-bottom: 0px;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    #desktop-nav {
+      display: none;
+    }
+    .abc{
+      text-align: justify;
+      padding-bottom: 40px;
+    }
+    .section__text{
+      padding-top: 10px;
+      align-items: center;
+    }
+    #about{
+      padding-top: 80px;
+    }
+    #hamburger-nav {
+      height: 80px;
+      display: flex;
+    }
+    .section__text{
+      align-items: center;
+    }
+    
+    #experience,
+    .experience-details-container {
+      margin-top: 2rem;
+    }
+    #profile,
+    .section-container {
+      width: fit-content;
+      display: block;
+    }
+    
+    #projects {
+      padding-top: 80px;
+      height: fit-content;
+      
+    }
+    #contact{
+      padding-top: 20px;
+      height: fit-content;
+      
+    }
+    .arrow {
+      display: none;
+    }
+    section,
+    .section-container {
+      height: fit-content;
+    }
+    #con {
+      padding-bottom: 0px;
+      margin: 0 5%;
+      padding-left: 50px;
+      padding-left: 10px;
+    }
+    section {
+      margin: 0 5%;
+    }
+    .section__pic-container {
+      width: 275px;
+      height: 275px;
+      margin: 0 auto 2rem;
+    }
+    .about-containers {
+      margin-top: 0;
+    }
+    #profile{
+      padding-top: 100px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #contact
+     {
+      height: 40vh;
+      
+    }
+    #profile{
+      padding-top: 100px;
+    }
+    .section__text{
+      align-items: center;
+    }
+    /* footer {
+      height: 10vh;
+      
+    } */
+    
+    #projects {
+      padding-top: 80px;
+      height: fit-content;
+      
+    }
+    #contact{
+      padding-top: 20px;
+      height: fit-content;
+      padding-bottom: 4px;
+      
+    }
+    #about{
+      padding-top: 80px;
+    }
+    #profile {
+      width: fit-content;
+      padding-top: 20px;
+      height: 43vh;
+      margin-bottom: 0;
+    }
+    article {
+      font-size: 1rem;
+    }
+    footer nav {
+      height: fit-content;
+      margin-bottom: 2rem;
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+      flex-wrap: wrap;
+      /* background-color: white; */
+    }
+    .contact-info-upper-container{
+      padding-top: 0;
+      text-align:start;
+      border-color: lightskyblue;
+      /* text-decoration: black; */
+    }
+    .contact-info-container {
+      padding-top: 0;
+      margin: 0;
+      /* background-color: white; */
+      /* color: black;  */
+      
+    }
+    .contact-info-container p,
+    .nav-links li a {
+      font-size: 1rem;
+      /* background-color: white; */
+      /* padding-top: 100px; */
+    }
+    .experience-sub-title {
+      font-size: 1.25rem;
+    }
+    .logo {
+      font-size: 1.5rem;
+      /* color: darkblue; */
+    }
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+    }
+    .section__pic-container {
+      width: auto;
+      height: 46vw;
+      justify-content: center;
+    }
+    .section__text__p2 {
+      font-size: 1.25rem;
+    }
+    .title {
+      font-size: 2rem;
+    }
+    .text-container {
+      text-align: justify;
+    }
+  }
+  .title1 {
+    font-size: 3rem;
+    text-align: center;
+    color: lightskyblue;
+  }
+
+
+  form{
+    width: fit-content;
+    margin: 50px auto;
+    max-width: 97%;
+    border-radius: 4px;
+    padding: 55px 30px;
+  }
+  form .half{
+    display: flex;
+    justify-content: space-between;
+  }
+  form .half .item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    width: 48%;
+  }
+  form label{
+    font-size: 13px;
+    letter-spacing: 3.5px;
+    margin-bottom: 16px;
+  }
+  form .half .item input{
+    border-radius: 4px;
+    border: 1px solid lightskyblue;
+    outline: 0;
+    padding: 16px;
+    height: 20px;
+    background: transparent;
+    font-size: 17px;
+  }
+  form .full{
+    margin-bottom: 24px;
+  }
+  form .full textarea{
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid lightskyblue;
+    outline: 0;
+    padding: 12px 16px;
+    width: 94%;
+    height: 100px;
+    font-size: 17px;
+  }
+  form .action{
+    margin-bottom: 32px;
+  }
+  form .action input{
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    height: 44px;
+    letter-spacing: 3px;
+    outline: 0;
+    padding: 0 20px 0 22px;
+    margin-right: 10px;
+  }
+  /* form .action input[type="submit"]{
+    background: white;
+    color: lightskyblue;
+  }
+  form .action input[type="reset"]{
+    background: white;
+    color: lightskyblue;
+  } */
+  form .action input[type="submit"]{
+    color: white;
+    background: lightskyblue;
+    border: 1px solid white;
+  }
+  form .action input[type="reset"]{
+    color: white;
+    background: lightskyblue;
+    border: 1px solid white;
+  }
+  form .action input[type="submit"]:hover{
+    color: white;
+    background: black;
+    border: 1px solid white;
+  }
+  form .action input[type="reset"]:hover{
+    color: white;
+    background: black;
+    border: 1px solid white;
+  }
+  
+  
+  form .icons a{
+    border: 1px solid black;
+    border-radius: 50%;
+    line-height: 36px;
+    text-align: center;
+    font-weight: 600;
+    width: 38px;
+    margin-right: 10px;
+  }
+
+  form .half .item input:focus, form .full textarea:focus,  form .icons a:hover{
+    background: rgba(255,255,255,0.075);
+  }
+  @media (max-width: 480px){
+    form .half{
+      flex-direction: column;
+    }
+    form .half .item{
+      width: 100%;
+    }
+    form .action{
+      display: flex;
+      flex-direction: column;
+    }
+    form .action input{
+      margin-bottom: 10px;
+      width: 100%;
+    }}  

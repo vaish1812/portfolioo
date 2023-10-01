@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+      Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+    }
+  </script>
+  <nav id="desktop-nav">
+    <div class="logo">VAISHNAVI KARALE</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#con">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">VAISHNAVI KARALE</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">VAISHNAVI KARALE</h1>
+      <p class="section__text__p2">Full Stack Developer & Cloud Enthusiast</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/VAISHNAVI KARALE.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/vaishnavi-karale-906706208'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/vaish1812'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title1">About Me</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Interests</h3>
+            <p>Web Development <br />Android Development <br /> Cloud Computing</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Tech <br> Walchand College Of Engineering, Sangli</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Hello! I am a passionate and highly motivated fresher eager to embark on a fulfilling
+            journey in the world of technology. My insatiable curiosity and love for problem-solving have led me to
+            pursue a career in software development, where I aim to contribute my creativity and technical skills to
+            make a positive impact. I thrive in collaborative environments and am excited to work with diverse
+            teams to tackle complex challenges and build innovative solutions. Beyond my technical skills, I possess strong communication and problem-solving abilities.
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title1">Technical Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Programming Languages</h2>
+          <div class="article-container">
+            <article>
+              <div>
+                <h3>C/C++</h3>
+              </div>
+            </article>
+            <article>
+              <div>
+                <h3>Java</h3>
+              </div>
+            </article>
+            <article>
+              <div>
+                <h3>Python</h3>
+              </div>
+            </article>
+            
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Web Technologies</h2>
+          <div class="article-container">
+            <article>
+              <div>
+                <h3>HTML</h3>
+              </div>
+            </article>
+            <article>
+              <div>
+                <h3>CSS</h3>
+              </div>
+            </article>
+            <article>
+              <div>
+                <h3>React JS</h3>
+              </div>
+            </article>
+            <article>
+              <div>
+                <h3>Node JS</h3>
+              </div>
+              
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Android Development</h2>
+          <div class="article-container">
+            <article>
+              <div>
+                <h3>Flutter</h3>
+              </div>
+            </article>
+            <article>
+              <div>
+                <h3>Firebase</h3>
+              </div>
+            </article>
+            <article>
+              <div>
+                <h3>Django</h3>
+              </div>
+            </article>
+            
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Others</h2>
+          <div class="article-container">
+            <article>
+              <div>
+                <h3>Databases</h3>
+              </div>
+            </article>
+            <article>
+              <div>
+                <h3>Cloud </h3>
+              </div>
+            </article>
+            <article>
+              <div>
+                <h3>Devops</h3>
+              </div>
+            </article>
+            <article>
+              <div>
+                <h3>Kubernetes</h3>
+              </div>
+                 </article>
+                 
+          </div>
+          
+        </div>
+        <p >A diverse skill set encompassing C/C++, Python, HTML, CSS, and JavaScript. My primary focus is on frontend development, where I excel with ReactJS. Additionally, I bring valuable experience to the table in backend development, having worked with frameworks like Django, NodeJS. My database proficiency extends to MySQL and MongoDB, and have used essential tools such as Docker, GitHub, AWS, and VSCode. These capabilities empower me to tackle a wide range of software development challenges with confidence.</p>
+         
+      </div>
+    </div>
+  </section>
+  <span></span>
+  <span></span>
+  <span></span><span></span><span></span><span></span><span></span><span></span>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title1">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/3.jpg" alt="Project 1" class="project-img" sizes="600, 600"/>
+          </div>
+          <h2 class="experience-sub-title project-title">VANI</h2>
+          <p class ="abc">This Flutter application serves as a tool for tracking menstrual cycles, pregnancy, and fertility awareness for 1000s of women.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nilay302/Vanitas-Shebuild'">
+              GITHUB
+            </button>
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              LIVE DEMO
+            </button> -->
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container1">
+            <img src="./assets/images.jpeg" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">CloudGuard</h2>
+          <p class ="abc">It suggests solutions and best practices to strengthen cloud infrastructure security by addressing potential vulnerabilities and
+            enhancing overall protection measures by 95%.
+            </p>
+
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/akshata123-gaw/Veritas_UK_Hackathon/tree/main/Veritas_Frontend'">
+              GITHUB
+            </button>
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              LIVE DEMO
+            </button> -->
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- <section id="con">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+  </head>
+  <form onsubmit=sendEmail="">
+    <div class="title1">
+      <h3>Contact</h3>
+    </div>
+    <div class="half">
+      <div class="item">
+        <label for="name">NAME</label>
+        <input type="text" id = "name">
+      </div>
+      <div class="item">
+        <label for="email">EMAIL</label>
+        <input type="text" id = "email">
+      </div>
+    </div>
+    <div class="full">
+      <label for="message">MESSAGE</label>
+      <textarea name="" id = "message"></textarea>
+    </div>
+    <div class="action">
+      <input type="submit" value = "SEND MESSAGE">
+      <input type="reset" value = "RESET">
+    </div>
+  </form>
+  </section> -->
+  <section id="contact">
+    <!-- <h1 class="title">Contact Me</h1> --> 
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a1 href="vaishnavikarale81@gmail.com">vaishnavikarale81@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a1 href="https://www.linkedin.com/in/vaishnavi-karale-906706208/">vaishnavikarale81</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Copyright &#169; 2023 VAISHNAVI KARALE. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
